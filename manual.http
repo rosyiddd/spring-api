@@ -1,0 +1,36 @@
+### all movie
+
+GET http://localhost:8080/movies
+Accept: application/json
+Content-Type: application/json
+
+### all movie
+
+GET http://localhost:8080/movies/2
+Accept: application/json
+Content-Type: application/json
+
+### create movie
+
+POST http://localhost:8080/movies
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Sleep Call",
+  "description": "Penagih utang tapi juga terlilit utang, Dina (Laura Basuki), terjebak dalam hidup yang keras dan kesepian. Sleep call jadi pelarian, agar kerasnya teror pinjol bisa terobati oleh hangatnya sleep call-an tiap malam dengan Rama (Bio One), pria yang ia kenal dari dating apps.",
+  "rating": 8.3,
+  "image": "image"
+}
+
+### update movie
+PATCH  http://localhost:8080/movies/3
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title" : "Hereditary"
+}
+
+### delete movie
+DELETE http://localhost:8080/movies/4
